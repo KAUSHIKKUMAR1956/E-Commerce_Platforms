@@ -1,91 +1,16 @@
-# E-commerce Website
+# React + Vite
 
-This is a full-stack E-commerce website built with Spring Boot for the backend and React with Vite for the frontend.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Technologies Used
+Currently, two official plugins are available:
 
-- **Backend**: Spring Boot, Spring Security, Spring Data JPA, MySQL
-- **Frontend**: React, Vite, Tailwind CSS
-- **Database**: H2 (for development), MySQL (for production)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Project Structure
+## React Compiler
 
-- `backend/`: Spring Boot application
-  - Controllers for API endpoints
-  - Models for database entities
-  - Services for business logic
-  - Security configuration
-- `frontend/`: React application
-  - Components for UI
-  - Pages for different views
-  - Services for API calls
-  - Context for state management
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Getting Started
+## Expanding the ESLint configuration
 
-### Prerequisites
-
-- Java 17 or higher
-- Node.js 16 or higher
-- Maven (or use mvnw)
-
-### Backend Setup
-
-1. Navigate to the backend directory:
-   ```
-   cd backend
-   ```
-
-2. Run the application:
-   ```
-   ./mvnw spring-boot:run
-   ```
-
-   The backend will start on http://localhost:8080
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-3. Run the development server:
-   ```
-   npm run dev
-   ```
-
-   The frontend will start on http://localhost:5173
-
-## Features
-
-- User authentication and authorization
-- Product catalog
-- Shopping cart
-- Order management
-- Admin dashboard
-
-## API Endpoints
-
-- Authentication: `/api/auth`
-- Products: `/api/products`
-- Categories: `/api/categories`
-- Orders: `/api/orders`
-- Admin: `/api/admin`
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
